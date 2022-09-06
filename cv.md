@@ -18,10 +18,10 @@
 
 **Hello!**
 My name's Nikolai. I'm from Belarus. I'm 28. I've always been interested in technology and I am inspired
-by web development.I want to make beautiful and useful apps to beat the routine and make life brighter, easier.
-I have been learning the web for about a year, I like to learn new things, I am not afraid of difficulties.
-I can make up landing pages and write SPA in pure JS, React. I believe that my perseverance and creativity will
-help me become a Frontend developer.
+by web development. A huge desire to develop and make the world a little better helps me move
+forward. I have been learning the web for about a year, I like to learn new things, I am not afraid of difficulties.
+I can make up landing pages and write SPA in pure JS, React. I believe that everything can be done better, and 
+I am convinced of it every time.
 
 ---
 
