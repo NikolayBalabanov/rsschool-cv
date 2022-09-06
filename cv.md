@@ -4,13 +4,16 @@
 <img src ="photo.webp" width = "150" height = "200" alt = "my-photo" />
 
 ---
+
 ## Contacts:
 1. Tel: +375-29-222-14-53
 2. E-mail: nikola.balabanov93@gmail.com
 3. Discord: Nikola_93
 4. [Telegram](https://t.me/NikolaBalabanov)
 5. [LinkedIn](www.linkedin.com/in/mikalai-balabanau)
+
 ---
+
 ## Abut me
 
 **Hello!**
@@ -21,6 +24,7 @@ I can make up landing pages and write SPA in pure JS, React. I believe that my p
 help me become a Frontend developer.
 
 ---
+
 ## My skills and tools:
 1. JS, CSS3, HTML5, React.
 2. Webpack, Gulp, Node.js, SCSS.
@@ -37,6 +41,7 @@ function solution(str){
 }
 ```
 ---
+
 ## My projects:
 1. [Blanchard-Galery-Site](https://github.com/NikolayBalabanov/Blanchard-Galery-Site)
 *Jan 2022 - Feb 2022*
@@ -52,7 +57,9 @@ interaction with the backend.
 4. [SneakMax](https://github.com/NikolayBalabanov/SneakMax)
 *Aug 2022*
 Product landing page. Gulp + SCSS + JS.
+
 ---
+
 ## Education
 1. **Polotsk Bachelor | Polotsk State University**
 *Sep 2011 - Jul 2016*
@@ -68,8 +75,3 @@ specialty of power supply
 1. English - A2+.
 2. Russian - native.
 3. Belarussian - B1.
-
-
-
-
-
