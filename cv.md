@@ -1,12 +1,15 @@
 
 # Nikolai Balabanov
+
+<img src ="photo.webp" width = "150" height = "200" alt = "my-photo" />
+
 ---
 ## Contacts:
 1. Tel: +375-29-222-14-53
 2. E-mail: nikola.balabanov93@gmail.com
 3. Discord: Nikola_93
 4. [Telegram](https://t.me/NikolaBalabanov)
-5. [Linked](www.linkedin.com/in/mikalai-balabanau)
+5. [LinkedIn](www.linkedin.com/in/mikalai-balabanau)
 ---
 ## Abut me
 
@@ -56,7 +59,7 @@ Qualifcation awarded: Energy Engineer
 specialty of power supply
 2. **Profession Fullstack Python | "Skillbox" company**
 *Aug 2021 - Present
-
+---
 ## Languages:
 1. English - A2+.
 2. Russian - native.
