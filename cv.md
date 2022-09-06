@@ -27,7 +27,9 @@ help me become a Frontend developer.
 3. VS Code, Figma, Bush.
 4. Git, Dev tools, Cypress, Jest, Postman.
 5. Adaptive, crossbrowser html with search engine optimisation.
+
 ---
+
 ## Code example:
 ```
 function solution(str){
@@ -59,7 +61,9 @@ Qualifcation awarded: Energy Engineer
 specialty of power supply
 2. **Profession Fullstack Python | "Skillbox" company**
 *Aug 2021 - Present
+
 ---
+
 ## Languages:
 1. English - A2+.
 2. Russian - native.
