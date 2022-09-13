@@ -12,7 +12,7 @@ const partnersSlider = new Swiper(".swiper", {
   speed: 700,
   breakpoints: {
 
-    760: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 50,
     },
@@ -54,3 +54,22 @@ const partnersSlider = new Swiper(".swiper", {
     }
   }
 });
+
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__nav');
+const navLinks = document.querySelectorAll('.header__nav .nav__item .nav__link');
+
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('nav--active');
+})
+
+navLinks.forEach(el => {
+  el.addEventListener('click', () => {
+    burger.classList.remove('burger--active');
+    menu.classList.remove('nav--active');
+  })
+})
+
