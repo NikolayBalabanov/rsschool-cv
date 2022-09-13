@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/opensans-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/opensans-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/opensans-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1210px;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.section {
+  padding: 50px 0px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: normal;
+  color: coral;
+  text-align: center;
+}
+
+/* header */
+
+.header {
+  background-color: #3F2AFF;
+}
+
+.header__content {
+  padding: 30px 0px;
+}
+
+.nav__list {
+  margin-left: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav__link {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+/* hero */
+
+.hero {
+  background-color: aquamarine;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around  ;
+}
+
+.hero__img {
+  display: block;
+  width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero__title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.hero__descr {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* about */
+
+.about__descr {
+  margin: 0;
+  width: 80%;
+}
+
+/* skills */
+
+.skills {
+  background-color: aquamarine;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.skills__item:first-child {
+  margin-bottom: 35px;
+}
+
+.skills__img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* projects */
+
+.projects {
+  background-color: #3F2AFF;
+}
+
+.projects__content {
+  position: relative;
+}
+
+.swiper-wrapper {
+  justify-content: space-between;
+}
+
+.swiper__navigation {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -25px;
+  right: -25px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper__pagination {
+  width: fit-content;
+}
+
+.swiper__btn_prev,
+.swiper__btn_next {
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.swiper-slide__img {
+  min-height: 300px;
+  /* object-fit: cover; */
+}
+
+.swiper-slide__content {
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.swiper-slide__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.swiper-slide__descr {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.swiper-slide__link {
+  /* margin-top: auto; */
+}
+
+/* education */
+
+.education__container {
+  display: flex;
+}
+
+.education__left,
+.education__right {
+  width: calc(50% - 25px);
+}
+
+.education__left {
+  margin-right: 50px;
+}
+
+.education__list {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
