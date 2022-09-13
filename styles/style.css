@@ -291,8 +291,8 @@ a {
 
 .hero__img {
   display: block;
-  width: 200px;
-  max-height: 200px;
+  width: 250px;
+  max-height: 250px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -571,6 +571,25 @@ a {
   background-color: var(--color-text);
   transform: scale(1);
   cursor: auto;
+}
+
+/* code */
+
+.code {
+  background-color: var(--color-flash);
+}
+
+.code__pre {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 578px) {
+  .code__pre {
+    position: relative;
+    left: -50px;
+    font-size: 11px;
+  }
 }
 
 /* education */
