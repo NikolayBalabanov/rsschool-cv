@@ -1,13 +1,13 @@
-const partnersSlider = new Swiper(".swiper", {
+const partnersSlider = new Swiper('.swiper', {
   slidesPerView: 1,
   grid: {
     rows: 1,
-    fill: "row"
+    fill: 'row'
   },
   spaceBetween: 0,
   navigation: {
-    nextEl: ".swiper__btn_next",
-    prevEl: ".swiper__btn_prev"
+    nextEl: '.swiper__btn_next',
+    prevEl: '.swiper__btn_prev'
   },
   speed: 700,
   breakpoints: {
