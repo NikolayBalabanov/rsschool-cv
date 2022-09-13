@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="icon" href="./assets/flavicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css" class="css">
+    <link rel="stylesheet" href="./styles/swiper.min.css" class="css">
+    <link rel="stylesheet" href="./styles/style.css" class="css">
+    <script defer src="./scripts/focus-visible.min.js"></script>
+    <script defer src="./scripts/swiper.min.js"></script>
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__content">
+        <div class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About&nbsp;me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">My&nbsp;projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code example</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-reset burger">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero section">
+      <div class="container hero__container">
+        <img class="hero__img" src="./assets/img/photo.webp" alt="Nikolai Balabanov photo">
+        <div class="hero__content">
+          <h1 class="hero__title title">Nikolai Balabanov</h1>
+          <p class="hero__descr">Front-End Developer</p>
+          <!-- <a class="hero__link" href="#contacts">Contact me</a> -->
+        </div>
+      </div>
+    </section>
+    <section class="about section" id="about">
+      <div class="container about__container">
+        <h2 class="about__title title">About me</h2>
+        <p class="about__descr">
+          I&rsquo;ve always been interested in&nbsp;technology and I&nbsp;am inspired by&nbsp;web development. A&nbsp;huge desire to&nbsp;develop and make the world a&nbsp;little better helps me&nbsp;move forward. I&nbsp;have been learning the web for about a&nbsp;year, I&nbsp;like to&nbsp;learn new things, I&nbsp;am not afraid of&nbsp;difficulties. I&nbsp;can make up&nbsp;landing pages and write SPA in&nbsp;pure JS, React. I&nbsp;believe that everything can be&nbsp;done better, and I&nbsp;am convinced of&nbsp;it&nbsp;every time.
+        </p>
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <div class="container skills__container">
+        <h2 class="skills__title title">Skills</h2>
+        <ul class="skills__list list-reset">
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/html5.svg" alt="HTML5" aria-label="HTML5"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/css3.svg" alt="CSS3" aria-label="CSS3"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/sass.svg" alt="SaSS" aria-label="SaSS"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/javascript.svg" alt="JavaScript" aria-label="JavaScript"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/react.svg" alt="React" aria-label="React"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/redux.svg" alt="Redux" aria-label="Redux"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/typescript.svg" alt="TS" aria-label="TS"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/webpack.svg" alt="Webpack" aria-label="Webpack"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/nodejs.svg" alt="Nodejs" aria-label="Nodejs"></li>
+          <li class="skills__item"><img class="skills__img" src="./assets/svg/bootstrap.svg" alt="Bootstrap" aria-label="Bootstrap"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects section" id="projects">
+      <div class="container projects__container">
+        <h2 class="projects__title title">My projects</h2>
+        <div class="projects__content">
+          <button class="swiper__btn swiper__btn_prev" aria-label="К предыдущему слайду"></button>
+          <div class="projects-slider swiper">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide">
+                <img class="swiper-slide__img" src="./assets/img/crm.jpg" loading="lazy" alt="JS-CRM project">
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__title">JS-CRM</h3>
+                    <p class="swiper-slide__descr">Customer Contact Data Management System (CRM). Written in pure JS, interaction with the backend, Bootstrap(CSS), HTML</p>
+                  </div>
+                  <a class="swiper-slide__link" href="https://github.com/NikolayBalabanov/js-crm" target="_blank">Repository link</a>
+                </div>
+              </article>
+              <article class="swiper-slide">
+                <img class="swiper-slide__img" src="./assets/img/blanchard-galery-site.jpg" loading="lazy" alt="Blanchard-Galery-Site project">
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__title">Blanchard-Galery-Site</h3>
+                    <p class="swiper-slide__descr">Flexbox landing, HTML5, CSS3, JS, responsive, BEM, accessibility.</p>
+                  </div>
+                  <a class="swiper-slide__link" href="https://nikolaybalabanov.github.io/blanchard-gallery-site" target="_blank">Demo link</a>
+                </div>
+              </article>
+              <article class="swiper-slide">
+                <img class="swiper-slide__img" src="./assets/img/SneakMax.jpg" loading="lazy" alt="SneakMax project">
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__title">SneakMax</h3>
+                    <p class="swiper-slide__descr">Gulp+Grid+SCSS layout, with JS and database.</p>
+                  </div>
+                  <a class="swiper-slide__link" href="https://nikolaybalabanov.github.io/SneakMax/" target="_blank">Demo link</a>
+                </div>
+              </article>
+              <article class="swiper-slide">
+                <img class="swiper-slide__img" src="./assets/img/star-wars-epicodes-finder.jpg" loading="lazy" alt="Star-Wars-API-practice project">
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__title">Star-Wars-API-practice</h3>
+                    <p class="swiper-slide__descr">An application to search for characters, ships and planets from Star Wars using the Star Wars API with the ability to select a search category. #Pure JS</p>
+                  </div>
+                  <a class="swiper-slide__link" href="https://nikolaybalabanov.github.io/star-wars-episodes-finder" target="_blank">Demo link</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="swiper__btn swiper__btn_next" aria-label="К следующему слайду"></button>
+        </div>
+      </div>
+    </section>
+    <section class="code section" id="code">
+      <div class="container">
+        <h2 class="code-title title">Code example</h2>
+        <pre class="code__pre">
+          <code class="code__content">
+            function grow(x){
+              return x.reduce((acc, el) => acc * el, 1);
+            }
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="education section" id="education">
+      <div class="container education__container">
+        <div class="education__left">
+          <h2 class="education__title title">Education</h2>
+          <ul class="education__list list-reset">
+            <li class="education__item">
+              <h3 class="education__place">Polotsk Bachelor&nbsp;| Polotsk State University</h3>
+              <span class="education__term">Sep 2011&nbsp;&mdash; Jul 2016</span>
+              <p class="education__text">Qualifcation awarded: Energy Engineer</p>
+              <p class="education__text">5&nbsp;years of&nbsp;education in&nbsp;Polotsk State University, radio engineering faculty with specialty of&nbsp;power supply</p>
+            </li>
+            <li class="education__item">
+              <h3 class="education__place">Profession Fullstack Python&nbsp;| Skillbox company</h3>
+              <span class="education__term">Aug 2021 - Present</span>
+            </li>
+          </ul>
+        </div>
+        <div class="education__right">
+          <h2 class="education__title title">Languages</h2>
+          <ul class="education__list education__list--right list-reset">
+            <li class="education__item">
+              <h3 class="education__place">English: A2+</h3>
+            </li>
+            <li class="education__item">
+              <h3 class="education__place">Russian: Native</h3>
+            </li>
+            <li class="education__item">
+              <h3 class="education__place">Belarussian: B1</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title title">Contacts</h2>
+        <ul class="contacts__list list-reset">
+          <li class="contacts__item">
+            <a href="tel:+375292221453" class="contacts__link contacts__link-tel">+375292221453</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:nikola.balabanov93@gmail.com" class="contacts__link contacts__link-mail">nikola.balabanov93@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <a href="https://discord.com" class="contacts__link contacts__link-discord">Nikola_93</a>
+          </li>
+          <li class="contacts__item">
+            <a href="https://t.me/NikolaBalabanov" target="_blank" class="contacts__link contacts__link-telegram">Telegram</a>
+          </li>
+          <li class="contacts__item">
+            <a href="www.linkedin.com/in/mikalai-balabanau" target="_blank" class="contacts__link contacts__link-linkedin">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list list-reset">
+        <li class="footer__item">
+          <span class="footer__year">2022</span>
+        </li>
+        <li class="footer__item"><a class="footer__link footer__link--github" href="https://github.com/NikolayBalabanov" target="_blank">NikolayBalabanov</a></li>
+        <li class="footer__item"><a class="footer__link footer__link--rss" target="_blank" href="https://rs.school/js/"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
