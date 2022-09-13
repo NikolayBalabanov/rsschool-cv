@@ -1,7 +1,7 @@
 
 # Nikolai Balabanov
 
-<img src ="photo.webp" width = "150" height = "200" alt = "my-photo" />
+<img src ="./assets/img/photo.webp" width = "150" height = "200" alt = "my-photo" />
 
 ---
 
