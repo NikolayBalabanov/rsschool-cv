@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/normalize.css" class="css">
     <link rel="stylesheet" href="./styles/swiper.min.css" class="css">
     <link rel="stylesheet" href="./styles/style.css" class="css">
+    <script defer src="./scripts/focus-visible.min.js"></script>
     <script defer src="./scripts/swiper.min.js"></script>
     <script defer src="./scripts/main.js"></script>
 </head>
@@ -84,6 +85,7 @@
       <div class="container projects__container">
         <h2 class="projects__title title">My projects</h2>
         <div class="projects__content">
+          <button class="swiper__btn swiper__btn_prev" aria-label="К предыдущему слайду"></button>
           <div class="projects-slider swiper">
             <div class="swiper-wrapper">
               <article class="swiper-slide">
@@ -93,7 +95,7 @@
                     <h3 class="swiper-slide__title">JS-CRM</h3>
                     <p class="swiper-slide__descr">Customer Contact Data Management System (CRM). Written in pure JS, interaction with the backend, Bootstrap(CSS), HTML</p>
                   </div>
-                  <a class="swiper-slide__link" href="#">Project link</a>
+                  <a class="swiper-slide__link" href="#">Demo link</a>
                 </div>
               </article>
               <article class="swiper-slide">
@@ -103,7 +105,7 @@
                     <h3 class="swiper-slide__title">Blanchard-Galery-Site</h3>
                     <p class="swiper-slide__descr">Flexbox landing, HTML5, CSS3, JS, responsive, BEM, accessibility.</p>
                   </div>
-                  <a class="swiper-slide__link" href="#">Project link</a>
+                  <a class="swiper-slide__link" href="#">Demo link</a>
                 </div>
               </article>
               <article class="swiper-slide">
@@ -113,7 +115,7 @@
                     <h3 class="swiper-slide__title">SneakMax</h3>
                     <p class="swiper-slide__descr">Gulp+Grid+SCSS layout, with JS and database.</p>
                   </div>
-                  <a class="swiper-slide__link" href="#">Project link</a>
+                  <a class="swiper-slide__link" href="#">Demo link</a>
                 </div>
               </article>
               <article class="swiper-slide">
@@ -128,11 +130,7 @@
               </article>
             </div>
           </div>
-          <div class="swiper__navigation">
-            <button class="swiper__btn swiper__btn_prev" aria-label="К предыдущему слайду"></button>
-            <div class="swiper__pagination"></div>
-            <button class="swiper__btn swiper__btn_next" aria-label="К следующему слайду"></button>
-          </div>
+          <button class="swiper__btn swiper__btn_next" aria-label="К следующему слайду"></button>
         </div>
       </div>
     </section>
