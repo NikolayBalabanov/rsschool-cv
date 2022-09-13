@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/fonts/opensans-regular.woff2") format("woff2");
+  src: url("../assets/fonts/opensans-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: fallback;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/fonts/opensans-semibold.woff2") format("woff2");
+  src: url("../assets/fonts/opensans-semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: fallback;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/assets/fonts/opensans-bold.woff2") format("woff2");
+  src: url("../assets/fonts/opensans-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: fallback;
@@ -719,23 +719,23 @@ a {
 }
 
 .contacts__link-mail::before {
-  background-image: url("/assets/svg/email.svg");
+  background-image: url("../assets/svg/email.svg");
 }
 
 .contacts__link-tel::before {
-  background-image: url("/assets/svg/mobile.svg");
+  background-image: url("../assets/svg/mobile.svg");
 }
 
 .contacts__link-telegram::before {
-  background-image: url("/assets/svg/telegram-logo-svgrepo-com.svg");
+  background-image: url("../assets/svg/telegram-logo-svgrepo-com.svg");
 }
 
 .contacts__link-discord::before {
-  background-image: url("/assets/svg/discord.svg");
+  background-image: url("../assets/svg/discord.svg");
 }
 
 .contacts__link-linkedin::before {
-  background-image: url("/assets/svg/linkedin.svg");
+  background-image: url("../assets/svg/linkedin.svg");
 }
 
 @media (max-width: 578px) {
@@ -779,7 +779,7 @@ a {
   display: inline-block;
   width: 88px;
   height: 33px;
-  background-image: url("/assets/svg/rs_school_js.svg");
+  background-image: url("../assets/svg/rs_school_js.svg");
   background-repeat: no-repeat;
 }
 
@@ -813,7 +813,7 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url("/assets/svg/github.svg");
+  background-image: url("../assets/svg/github.svg");
   background-repeat: no-repeat;
 }
 
@@ -841,12 +841,7 @@ a {
   }
 
   .footer__link--rss {
-    display: inline-block;
     width: 100px;
     height: 38px;
-    background-image: url("/assets/svg/rs_school_js.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
-
 }
