@@ -605,6 +605,7 @@ a {
   .project__content {
     position: relative;
     visibility: visible;
+    padding: 10px;
     animation: none;
     gap: 10px;
   }
