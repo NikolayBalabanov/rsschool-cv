@@ -7,10 +7,8 @@
     <title>cv</title>
     <link rel="icon" href="./assets/flavicon.ico" />
     <link rel="stylesheet" href="./styles/normalize.css" class="css" />
-    <link rel="stylesheet" href="./styles/swiper.min.css" class="css" />
     <link rel="stylesheet" href="./styles/style.css" class="css" />
     <script defer src="./scripts/focus-visible.min.js"></script>
-    <script defer src="./scripts/swiper.min.js"></script>
     <script defer src="./scripts/main.js"></script>
   </head>
   <body>
@@ -27,9 +25,6 @@
               </li>
               <li class="nav__item">
                 <a href="#projects" class="nav__link">My&nbsp;projects</a>
-              </li>
-              <li class="nav__item">
-                <a href="#code" class="nav__link">Code example</a>
               </li>
               <li class="nav__item">
                 <a href="#education" class="nav__link">Education</a>
@@ -146,217 +141,458 @@
         <div class="container projects__container">
           <h2 class="projects__title title">My projects</h2>
           <div class="projects__content">
-            <button class="swiper__btn swiper__btn_prev" aria-label="К предыдущему слайду"></button>
-            <div class="projects-slider swiper">
-              <div class="swiper-wrapper">
-                <article class="swiper-slide">
-                  <a class="swiper-slide__link" href="https://json-statham.com/" target="_blank">
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/trello-clone.png"
-                      loading="lazy"
-                      alt="Trello clone"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Trello clone</h3>
-                      <p class="swiper-slide__descr">
-                        TypeScript, React 18, React-router-dom, React-beautiful-dnd,
-                        React-loading-skeleton, Redux, RTK Query Tailwind, Cypress
-                      </p>
-                    </div>
+            <!-- Monie Portal -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/movie-portal.png"
+                loading="lazy"
+                alt="Movie portal"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Movie portal</h3>
+                <p class="project__descr">
+                  There are 4 pages - Movies, Movie Details, Actors, Actor Details. On the Main
+                  page, you can view movies, search a movie, filter movies (popular, top rated, now
+                  playing, upcoming). On the Actors page, you can view actors list, search an actor.
+                  On the Movie Details you can view detail information about a movie. On the Actor
+                  Details you can view detail information about an actor. There is pagination.
+                  Responsive layout (320px/1920px)
+                </p>
+                <p class="project__stack">
+                  Typescript, React, Redux, react-router-dom, Vite, Tailwindcss, Swiper
+                </p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/my-movie-portal"
+                    target="_blank"
+                    aria-label="Movie portal"
+                  >
+                    Code
                   </a>
                   <a
-                    class="swiper-slide__link"
+                    class="project__link project__link--demo"
+                    href="movie-portal-react.netlify.app"
+                    target="_blank"
+                    aria-label="Movie portal"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Trello -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/trello-clone.png"
+                loading="lazy"
+                alt="trello-clone"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Trello-clone</h3>
+                <p class="project__descr">
+                  Team project. This app is designed to manage tasks, with it you can easily:
+                </p>
+                <ul class="list-reset project__list" aria-label="list of the app features">
+                  <li>Create as many boards as you wish</li>
+                  <li>Create columns with tasks inside the boards</li>
+                  <li>Drag and drop your task columns</li>
+                  <li>Add descriptions and titles to tasks</li>
+                  <li>Drag and drop your tasks both inside and into other columns as you wish</li>
+                  <li>Customize you profile</li>
+                </ul>
+                <p class="project__stack">
+                  Stack: TypeScript, React, Redux Toolkit, Tailwind, Cypress
+                </p>
+
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/rsclone"
+                    target="_blank"
+                    aria-label="trello-clone github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
+                    href="https://json-statham.com/"
+                    target="_blank"
+                    aria-label="visit trello-clone site"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Pomadoro Time Tracker -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/pomodoro-time-tracker.png"
+                loading="lazy"
+                alt="pomodoro-time-tracker"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Pomodoro time tracker</h3>
+                <p class="project__descr">
+                  There are 2 pages - Main and Statistics. On the Main page, you can view a
+                  description, a list of tasks, a form for adding a task and a timer with controls.
+                  On the Statistics page, you can view the timer usage statistics. The app has two
+                  themes light and dark. The application saves the state in localStorage When the
+                  application is restarted, it is restored the previous saved state. Responsive
+                  layout (320px/1920px)
+                </p>
+                <p class="project__stack">
+                  Typescript, React, Redux Toolkit, react-transition-group, react-router-dom, Vite,
+                  Tailwindcss, Chart.js, react-chartjs-2, daysjs
+                </p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/pomodoro-time-tracker"
+                    target="_blank"
+                    aria-label="Pomodoro time tracker github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
+                    href="https://pomodoro-react-nikola.netlify.app/"
+                    target="_blank"
+                    aria-label="Pomodoro time tracker project demo"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Pizza -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/react-pizza.png"
+                loading="lazy"
+                alt="React pizza project"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">React pizza</h3>
+                <p class="project__descr">
+                  The pizzeria's landing page. There is all the necessary functionality: home page
+                  (catalog), shopping cart. Adaptive web application is equally convenient for use
+                  both on the phone and on the desktop. The UI is informative and easy to use.
+                </p>
+                <p class="project__stack">
+                  Stack: ReactJS 18, TypeScript, Redux Toolkit, React Router v6, Axios, Hooks, SCSS,
+                  CSS-Modules
+                </p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/react-pizza"
+                    target="_blank"
+                    aria-label="React pizza github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
                     href="https://nikola-pizza.netlify.app/"
                     target="_blank"
+                    aria-label="visit React pizza site"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/react-pizza.png"
-                      loading="lazy"
-                      alt="React pizza project"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">React pizza</h3>
-                      <p class="swiper-slide__descr">
-                        ReactJS 18, TypeScript, Redux Toolkit, React Router v6, Axios, Hooks, SCSS,
-                        CSS-Modules
-                      </p>
-                    </div>
+                    Demo
                   </a>
-                </article>
-                <article class="swiper-slide">
+                </div>
+              </div>
+            </article>
+            <!-- Pomadoro Time Tracker -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/todo-classes.png"
+                loading="lazy"
+                alt="pomodoro-time-tracker"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">ToDo list</h3>
+                <p class="project__descr">
+                  Todo app based on React. I use class components for practice. The app has two
+                  themes light and dark. The application saves the state in localStorage When the
+                  application is restarted, it is restored the previous saved state. Responsive
+                  layout (320px/1920px)
+                </p>
+                <p class="project__stack">
+                  Typescript, React, react-router-dom, Vite, Tailwindcss.
+                </p>
+                <div class="project__btns">
                   <a
-                    class="swiper-slide__link"
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/react-todo-classes"
+                    target="_blank"
+                    aria-label="ToDo list github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
+                    href="https://react-todo-classes.netlify.app"
+                    target="_blank"
+                    aria-label="ToDo list project demo"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Online Store -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/store.png"
+                loading="lazy"
+                alt="Online store project"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Online store</h3>
+                <p class="project__descr">
+                  The application implements: A page of products with filters. The basket page of
+                  the selected products. Modal window for registration (purchase) of selected
+                  products. Product description page. Header containing the number of products added
+                  to the cart and the total amount of purchases. Page 404.
+                </p>
+                <p class="project__stack">Stack: TypeScript, SCSS, Webpack, Ajax(fetch)</p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/Online-Store"
+                    target="_blank"
+                    aria-label="Online store github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
                     href="https://nikolaybalabanov-online-store.netlify.app/"
                     target="_blank"
+                    aria-label="visit Online store site"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/store.png"
-                      loading="lazy"
-                      alt="Online store"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Online store</h3>
-                      <p class="swiper-slide__descr">TypeScript/SCSS/Webpack/Ajax</p>
-                    </div>
+                    Demo
                   </a>
+                </div>
+              </div>
+            </article>
+            <!-- Bank Diplomia -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/back.png"
+                loading="lazy"
+                alt="Bank Diplomia project"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Bank Diplomia</h3>
+                <p class="project__descr">
+                  The application implements: A page of products with filters. The basket page of
+                  the selected products. Modal window for registration (purchase) of selected
+                  products. Product description page. Header containing the number of products added
+                  to the cart and the total amount of purchases. Page 404.
+                </p>
+                <p class="project__stack">
+                  Stack: JavaScript, SASS, cypress, Navigate, chart.js, navigo, redom.
+                </p>
+                <div class="project__btns">
                   <a
-                    class="swiper-slide__link"
+                    class="project__link project__link--github"
                     href="https://github.com/NikolayBalabanov/bank-diplomia"
                     target="_blank"
+                    aria-label="Bank Diplomia github source"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/back.png"
-                      loading="lazy"
-                      alt="Bank Diplomia"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Bank Diplomia</h3>
-                      <p class="swiper-slide__descr">
-                        Stack: JavaScript, SASS, cypress, Navigate, chart.js, navigo, redom.
-                      </p>
-                    </div>
+                    Code
                   </a>
-                </article>
-                <article class="swiper-slide">
+                </div>
+              </div>
+            </article>
+            <!-- Online-zoo -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/online-zoo.jpg"
+                loading="lazy"
+                alt="Online-zoo landing"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Online-zoo landing</h3>
+                <p class="project__descr">
+                  Adaptive and responsive landing page. Just for practice.
+                </p>
+                <p class="project__stack">Stack: JS, CSS3, HTML5.</p>
+                <div class="project__btns">
                   <a
-                    class="swiper-slide__link"
-                    href="https://nikolaybalabanov.github.io/color-generator/"
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/online-zoo"
                     target="_blank"
+                    aria-label="Online-zoo landing github source"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/color-generator.jpg"
-                      loading="lazy"
-                      alt="color-generator"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Color-generator</h3>
-                      <p class="swiper-slide__descr">
-                        You can switch colors by pressing the space bar, find colors, copy them and
-                        share. Stack: JS, HTML5, CSS3.
-                      </p>
-                    </div>
+                    Code
                   </a>
                   <a
-                    class="swiper-slide__link"
-                    href="https://nikolaybalabanov.github.io/color-generator/"
+                    class="project__link project__link--demo"
+                    href="https://nikolaybalabanov.github.io/online-zoo/pages/main/"
                     target="_blank"
+                    aria-label="visit Online-zoo landing"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/online-zoo.jpg"
-                      loading="lazy"
-                      alt="Online-zoo landing"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Online-zoo landing</h3>
-                      <p class="swiper-slide__descr">
-                        Adaptive and responsive landing page. Just for practice. JS, CSS3, HTML5.
-                      </p>
-                    </div>
+                    Demo
                   </a>
-                </article>
-                <article class="swiper-slide">
+                </div>
+              </div>
+            </article>
+            <!-- High pass -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/high-pass.png"
+                loading="lazy"
+                alt="High pass landing"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">High pass landing</h3>
+                <p class="project__descr">
+                  Adaptive and responsive landing page. Just for practice. Custom validation.
+                </p>
+                <p class="project__stack">
+                  Stack: Gulp, Grid landing, HTML5, CSS3, JS, responsive, BEM, accessibility.
+                </p>
+                <div class="project__btns">
                   <a
-                    class="swiper-slide__link"
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/high-pass"
+                    target="_blank"
+                    aria-label="High pass landing github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
+                    href="https://nikolaybalabanov.github.io/high-pass"
+                    target="_blank"
+                    aria-label="visit High pass landing"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- SneakMax -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/SneakMax.jpg"
+                loading="lazy"
+                alt="SneakMax landing"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">SneakMax landing</h3>
+                <p class="project__descr">
+                  Adaptive and responsive landing page. Just for practice. Quiz, modals, cart logic.
+                  After quiz submition data goes to email.
+                </p>
+                <p class="project__stack">Stack: Gulp, Grid, SCSS</p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/SneakMax"
+                    target="_blank"
+                    aria-label="SneakMax landing github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
                     href="https://nikolaybalabanov.github.io/SneakMax/"
                     target="_blank"
+                    aria-label="visit SneakMax landing"
                   >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/SneakMax.jpg"
-                      loading="lazy"
-                      alt="SneakMax project"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">SneakMax</h3>
-                      <p class="swiper-slide__descr">
-                        Gulp+Grid+SCSS layout, with JS and database.
-                      </p>
-                    </div>
+                    Demo
                   </a>
-                  <a
-                    class="swiper-slide__link"
-                    href="https://nikolaybalabanov.github.io/high-pass/"
-                    target="_blank"
-                  >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/high-pass.png"
-                      loading="lazy"
-                      alt="High pass"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">High pass</h3>
-                      <p class="swiper-slide__descr">
-                        Gulp, Grid landing, HTML5, CSS3, JS, responsive, BEM, accessibility.
-                      </p>
-                    </div>
-                  </a>
-                </article>
-                <article class="swiper-slide">
-                  <a
-                    class="swiper-slide__link"
-                    href="https://nikolaybalabanov.github.io/color-generator/"
-                    target="_blank"
-                  >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/crm.jpg"
-                      loading="lazy"
-                      alt="JS-CRM project"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">JS-CRM</h3>
-                      <p class="swiper-slide__descr">
-                        Customer Contact Data Management System (CRM). Written in pure JS,
-                        interaction with the backend, Bootstrap(CSS), HTML
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    class="swiper-slide__link"
-                    href="https://nikolaybalabanov.github.io/color-generator/"
-                    target="_blank"
-                  >
-                    <img
-                      class="swiper-slide__img"
-                      src="./assets/img/blanchard-galery-site.jpg"
-                      loading="lazy"
-                      alt="Blanchard-Galery-Site project"
-                    />
-                    <div class="swiper-slide__content">
-                      <h3 class="swiper-slide__title">Blanchard-Galery-Site</h3>
-                      <p class="swiper-slide__descr">
-                        Flexbox landing, HTML5, CSS3, JS, responsive, BEM, accessibility.
-                      </p>
-                    </div>
-                  </a>
-                </article>
+                </div>
               </div>
-            </div>
-            <button class="swiper__btn swiper__btn_next" aria-label="К следующему слайду"></button>
+            </article>
+            <!-- JS-CRM -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/crm.jpg"
+                loading="lazy"
+                alt="JS-CRM project"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">JS-CRM project</h3>
+                <p class="project__descr">Customer Contact Data Management System (CRM).</p>
+                <p class="project__stack">
+                  Stack: pure JS, interaction with the backend, Bootstrap(CSS), HTML
+                </p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/js-crm"
+                    target="_blank"
+                    aria-label="JS-CRM project github source"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Blanchard-Galery -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="./assets/img/blanchard-galery-site.jpg"
+                loading="lazy"
+                alt="Blanchard-Galery"
+              />
+              <button class="project__show-btn"></button>
+              <div class="project__content">
+                <h3 class="project__title">Blanchard-Galery</h3>
+                <p class="project__descr">Lending for practice</p>
+                <p class="project__stack">
+                  Flexbox landing, HTML5, CSS3, JS, responsive, BEM, accessibility.
+                </p>
+                <div class="project__btns">
+                  <a
+                    class="project__link project__link--github"
+                    href="https://github.com/NikolayBalabanov/blanchard-gallery-site"
+                    target="_blank"
+                    aria-label="Blanchard-Galery github source"
+                  >
+                    Code
+                  </a>
+                  <a
+                    class="project__link project__link--demo"
+                    href="https://nikolaybalabanov.github.io/blanchard-gallery-site"
+                    target="_blank"
+                    aria-label="visit Blanchard-Galery landing"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
-      <section class="code section" id="code">
-        <div class="container">
-          <h2 class="code-title title">Code example</h2>
-          <pre class="code__pre">
-          <code class="code__content">
-            function curryPartial(fn, ...args) {
-              if (args.length < fn.length) {
-                return (...otherArgs) => curryPartial(fn, ...args, ...otherArgs)
-              } else {
-                return fn(...args)
-              }
-            }
-          </code>
-        </pre>
         </div>
       </section>
       <section class="education section" id="education">
@@ -420,25 +656,27 @@
               >
             </li>
             <li class="contacts__item">
-              <a href="https://discord.com" class="contacts__link contacts__link-discord"
-                >Nikola_93</a
-              >
+              <a href="https://discord.com" class="contacts__link contacts__link-discord">
+                Nikola_93
+              </a>
             </li>
             <li class="contacts__item">
               <a
                 href="https://t.me/NikolaBalabanov"
                 target="_blank"
                 class="contacts__link contacts__link-telegram"
-                >Telegram</a
               >
+                Telegram
+              </a>
             </li>
             <li class="contacts__item">
               <a
                 href="www.linkedin.com/in/mikalai-balabanau"
                 target="_blank"
                 class="contacts__link contacts__link-linkedin"
-                >LinkedIn</a
               >
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
